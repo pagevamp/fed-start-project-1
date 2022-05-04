@@ -1,0 +1,38 @@
+ .card--article {
+    &__sale {
+        top: 2rem;
+        left: 2rem;
+        max-width: 90%;
+    }
+    
+    &__button {
+        &--list {
+            left: 0;
+            right: 0;
+            bottom: 2rem;
+            font-size: 2rem;
+            
+            a {
+                height: 4rem;
+                width: 4rem;   
+            }
+        }
+    }
+    
+    &__rating {
+        font-size: 1.2rem;
+        border-radius: 2rem;
+    }
+    
+    &__title {
+        line-height: 1.5;
+        
+        h3 {
+            font-size: 1.6rem;
+        }
+    }
+    
+    &__price {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,39 @@
+<div class="card--article__main ">
+    <div class="card--article__head position-relative">
+        <div class="card--article__image ratio ratio-300x348">
+            <img src="@@img" alt="">            
+        </div>
+        <span class="card--article__sale bg-danger text-white position-absolute box-shadow rounded-3 fw-bold text-capitalize text-truncate p-2">@@saleText</span>
+        <div class="card--article__button card--article__button--list position-absolute d-flex flex-wrap align-items-center justify-content-center">
+            <a href="#" class="rounded-circle bg-white text-dark d-flex align-items-center justify-content-center text-hover-danger transition-slow m-4"><i class="icon-heart"></i></a>
+            <a href="#" class="rounded-circle bg-white text-dark d-flex align-items-center justify-content-center text-hover-danger transition-slow m-4"><i class="icon-cart"></i></a>
+            <a href="#" class="rounded-circle bg-white text-dark d-flex align-items-center justify-content-center text-hover-danger transition-slow m-4"><i class="icon-icn-favorite"></i></i></a>
+        </div>  
+    </div>    
+    <div class="card--article__body px-6 pt-6">
+        <div class="card--article__eyebrow--rating d-flex align-items-center mb-2">
+            <div class="card--article__eyebrow flex-grow-1 text-danger fw-bold pe-1">
+                @@articleType
+            </div>
+            <div class="card--article__rating bg-dark-blue p-2 d-flex align-items-center text-white">
+                <i class="icon-heart-fill text-warning me-1"></i> @@rating
+            </div>
+        </div>  
+        <div class="card--article__title">
+            <h3>@@articleTitle</h3>
+        </div>
+        <div class="card--article__description mb-2">
+            <p>@@text</p>
+        </div>
+        <div class="card--article__sales sales-icon mb-2">
+            <a href="#"><i class="icon-Frame-sec text-hover-danger me-3"></i></a> <span class="fw-bold">@@sales</span>
+        </div>
+        <div class="card--article__price fw-bold mb-2">
+            <span class="text-rabbit">@@price</span>
+            <span class="text-indigo">@@priceDiscount</span>
+        </div>
+        <div class="card--article__button">
+            <a href="#" class="btn btn-outline-danger position-relative d-inline-flex flex-wrap align-items-center rounded-pill pe-5">@@btnText <i class="icon-arrow-right ms-3"></i></a>
+        </div>
+    </div>
+</div>  

@@ -1,0 +1,27 @@
+.card-a01 {
+    .icon-hold {
+        height: 72px;
+        width: 72px;
+        font-size: 3rem;
+    }
+}
+.title-line {
+    &::after {
+        position: absolute;
+        content:'';
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: $red;
+
+    }
+
+    a {
+        transition: color 0.5s ease ;
+        &:hover,
+        &:focus {
+            color: $red !important;
+        }
+    }
+}

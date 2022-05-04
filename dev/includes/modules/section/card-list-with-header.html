@@ -1,0 +1,16 @@
+<section class="card-list-with-header py-10 py-md-15 py-xl-40">
+    <div class="container">
+        @@for (var i = 0; i < cardHeader.list.length; i++) {
+            @@include('../card-header/card-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
+        }        
+        
+        <div class="card-list">
+            <div class="row">
+                @@for (var i = 0; i < cards.list.length; i++) { 
+                    @@include('../cards/card-a01.html',`+(JSON.stringify(cards.list[i]))+`)
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<!-- card list with header -->

@@ -1,0 +1,30 @@
+<div class="card-article-description-list__main bg-white py-6 px-5 py-lg-12 px-lg-10">
+    <div class="icon-hold">
+        @@icon
+    </div>
+    <div class="article-type">
+        @@articleType
+    </div>
+    <div class="article-text">
+        <p>@@text</p>
+    </div>
+    <div class="price">
+        @@price
+    </div>
+    <div class="month">
+        @@priceMonth
+    </div>
+    <div class="description">
+        @@articleDescription
+    </div>
+    <div class="button">
+        <a href="#" class="btn btn-danger text-white w-100" >@@btnText</a>
+    </div>
+    <ul class="card-article-description-list__points ps-0 mb-0">
+        @@for (var i = 0; i < cardArticleDescriptionListPoint.list.length; i++) {
+            <li class="">
+                @@include('../card-article-description-list-list/card-article-description-list-list.html',`+(JSON.stringify(cardArticleDescriptionListPoint.list[i]))+`)
+            </li>                
+        }
+    </ul>  
+</div>    

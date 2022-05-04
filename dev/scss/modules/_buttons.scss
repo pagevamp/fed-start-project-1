@@ -1,0 +1,26 @@
+.btn-arrow { 
+    &:hover {
+        &::after {
+            transform:translateX(5px) ;
+        }
+    }   
+    &::after {
+        position: absolute;
+        content: $icon-arrow-right;
+        font-family: icomoon;
+        font-size: 1.4rem;
+        top: 5px;
+        right: 0;
+        color: $red;
+        font-weight: normal;
+        transition: transform 0.5s ease;
+    }
+}
+
+.btn-outline-danger {    
+    padding: 1rem 4rem 1rem 2rem !important;
+
+    &.btn-arrow {
+        right: 1rem;
+    }
+}

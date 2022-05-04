@@ -1,0 +1,17 @@
+<section class="card-article-description bg-dark-blue py-10 py-md-20 py-lg-40">
+    <div class="container">
+        @@include('../card-header/card-header.html',{
+            'eyebrow': '@@eyebrowText',
+            'title': '@@titleText',
+            'text': '@@textText',
+            'text-white':'@@textClass'
+        })
+
+        <div class="row">
+            @@for (var i = 0; i < cardArticleDescriptionList.list.length; i++) {
+                <div class="col-md-4">
+                    @@include('../card-article-description-list/card-article-description-list.html',`+(JSON.stringify(cardArticleDescriptionList.list[i]))+`)
+                </div>                
+            }
+    </div>
+</section>
