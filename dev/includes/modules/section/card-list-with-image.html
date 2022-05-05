@@ -2,9 +2,9 @@
     <div class="container">
         @@if (header === true) {
             @@for (var i = 0; i < cardHeader.list.length; i++) {
-            @@include('../card-image-list-header/card-image-list-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
+                @@include('../card-image-list-header/card-image-list-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
+            }
         }
-          }
         
         
         <div class="row align-items-md-center">
