@@ -1,0 +1,8 @@
+<h2 class="mb-5">@@title</h2>
+<ul class="footer-menu-list list-unstyled mb-6 mb-md-12">
+    @@for (var i = 0; i < footerMenuList.list.length; i++) {        
+        @@include('../footer-menu-list/footer-menu-list.html',`+(JSON.stringify(footerMenuList.list[i]))+`)    
+    }
+    
+</ul>
+
