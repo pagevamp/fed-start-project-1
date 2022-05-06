@@ -1,11 +1,22 @@
 <footer class="theme-footer bg-primary text-white">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-lg-2">Footer here</div>
-            <div class="col-md-3 col-lg-2">Footer here</div>
-            <div class="col-md-3 col-lg-2">Footer here</div>
-            <div class="col-md-3 col-lg-2">Footer here</div>
-            <div class="col-lg-4">Footer here</div>
+            <div class="@@colClass">
+               @@include('modules/footer-menu/footer-menu.html',{
+                    'title':'@@listOne.title',
+                    'footerMenuList': {
+                        "list": [
+                        {
+                            'menuTitle': 'About Us',
+                            'menuTitle': 'Carrier',
+                            'menuTitle': 'We are hiring',
+                            'menuTitle': 'Blog',
+                        }
+                        ]
+                    }
+                })
+            </div>
+            <div class="@@colClassLarge"></div> 
         </div>
     </div>
 </footer>

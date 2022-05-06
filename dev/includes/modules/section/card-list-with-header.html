@@ -1,8 +1,12 @@
 <section class="card-list-with-header py-10 py-md-15 py-xl-40">
     <div class="container">
-        @@for (var i = 0; i < cardHeader.list.length; i++) {
-            @@include('../card-header/card-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
-        }        
+        @@include('../card-header/card-header.html',{
+            'eyebrow': '@@eyebrow',
+            'title': '@@title',
+            'desc': '@@desc',
+            'textAlign': '@@textAlign',
+            'rowAlign':'@@rowAlign',            
+        })        
         
         <div class="card-list">
             <div class="row">
