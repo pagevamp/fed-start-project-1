@@ -1,7 +1,21 @@
 <footer class="theme-footer bg-primary text-white">
     <div class="container">
         <div class="row">
-            <div class="col">Footer here</div>
+            <div class="@@colClass">
+               @@include('modules/footer-menu/footer-menu.html',{
+                    'title':'@@listOne.title',
+                    'footerMenuList': {
+                        "list": [
+                        {
+                            'menuTitle': 'About Us',
+                            'menuTitle': 'Carrier',
+                            'menuTitle': 'We are hiring',
+                            'menuTitle': 'Blog',
+                        }
+                        ]
+                    }
+                })
+            </div>
         </div>
     </div>
 </footer>

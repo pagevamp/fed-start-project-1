@@ -3,15 +3,122 @@
         @@include('../card-header/card-header.html',{
             'eyebrow': '@@eyebrowText',
             'title': '@@titleText',
-            'text': '@@textText',
-            'text-white':'@@textClass'
+            'desc': '@@desc',
+            'textColor':'@@textColor'
         })
-
-        <div class="row">
-            @@for (var i = 0; i < cardArticleDescriptionList.list.length; i++) {
-                <div class="col-md-4">
-                    @@include('../card-article-description-list/card-article-description-list.html',`+(JSON.stringify(cardArticleDescriptionList.list[i]))+`)
-                </div>                
-            }
-    </div>
-</section>
+        
+        <div class="row gy-4">            
+            <div class="@@colClass ">
+                @@include('../card-article-description-list/card-article-description-list.html',{
+                    'bannerText':'@@listThree.bannerText',
+                    'icon':'@@listThree.icon',
+                    'articleType': '@@listThree.articleType', 
+                    'desc': '@@listThree.desc',
+                    'price': '@@listThree.price',
+                    'priceMonth': '@@listThree.priceMont',
+                    'articleDescription': '@@listThree.articleDescription',
+                    'btnText': '@@listThree.btnText',
+                    'modifierClass':'@@listThree.modifierClass',
+                    'cardArticleDescriptionListPoint': {
+                        "list": [
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': '1GB  Cloud storage',
+                            'modifierClass': ''
+                        },
+                        {
+                            'description': 'Email and community support',
+                            'modifierClass': ''
+                        }                        
+                        ]
+                    }
+                })             
+            </div>
+            
+            <div class="@@colClass ">
+                @@include('../card-article-description-list/card-article-description-list.html',{
+                    'bannerText':'@@listTwo.bannerText',
+                    'icon':'@@listTwo.icon',
+                    'articleType': '@@listTwo.articleType', 
+                    'desc': '@@listTwo.desc',
+                    'price': '@@listTwo.price',
+                    'priceMonth': '@@listTwo.priceMont',
+                    'articleDescription': '@@listTwo.articleDescription',
+                    'btnText': '@@listTwo.btnText',
+                    'modifierClass':'@@listTwo.modifierClass',
+                    'cardArticleDescriptionListPoint': {
+                        "list": [
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': '1GB  Cloud storage',
+                            'modifierClass': ''
+                        },
+                        {
+                            'description': 'Email and community support',
+                            'modifierClass': ''
+                        }                        
+                        ]
+                    }
+                })            
+            </div>
+            
+            <div class="@@colClass ">
+                @@include('../card-article-description-list/card-article-description-list.html',{
+                    'bannerText':'@@listOne.bannerText',
+                    'icon':'@@listOne.icon',
+                    'articleType': '@@listOne.articleType', 
+                    'desc': '@@listOne.desc',
+                    'price': '@@listOne.price',
+                    'priceMonth': '@@listOne.priceMont',
+                    'articleDescription': '@@listOne.articleDescription',
+                    'btnText': '@@listOne.btnText',
+                    'modifierClass':'@@listOne.modifierClass',
+                    'cardArticleDescriptionListPoint': {
+                        "list": [
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': 'Unlimited product updates',
+                            'modifierClass': 'active'
+                        },
+                        {
+                            'description': '1GB  Cloud storage',
+                            'modifierClass': ''
+                        },
+                        {
+                            'description': 'Email and community support',
+                            'modifierClass': ''
+                        }                        
+                        ]
+                    }
+                })             
+            </div>
+        </section>

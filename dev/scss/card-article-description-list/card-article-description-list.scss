@@ -1,0 +1,66 @@
+.card-article-description-list {
+    &__banner {
+        display: none;
+        visibility: hidden;
+        
+        .banner-active &{
+            top: -2rem;
+            right: -2rem;
+            font-size: 2.4rem;
+            line-height: 1.33;
+            height: 9rem;
+            width: 9rem;
+            z-index: 1;
+            visibility: visible;
+            letter-spacing: 0.01rem;
+        }
+    }
+    &__icon-hold {
+        width: 9.6rem;
+        height: 9.6rem;
+        font-size: 3rem;
+    }
+    
+    &__article-type {
+        font-size: 2.4em;
+        line-height: 1.33;
+    }
+    
+    &__price {
+        font-size: 4rem;
+        line-height: 1.25;
+    }
+    
+    &__article-text {
+        line-height: 1.71;
+    }
+    
+    &__points {
+        li {
+            line-height: 1.71;
+            &::before {
+                position: absolute;
+                content:$icon-tick;
+                font-family: icomoon;                
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $rabbit;
+                color: $white;
+                top: 0;
+                left: 0;
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius:50%;                
+                font-size: 1rem;
+            }
+            
+            &.active {
+                &::before {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}
+

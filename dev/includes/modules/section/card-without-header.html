@@ -1,22 +1,23 @@
 <section class="card-with-image py-10 py-md-15 py-xl-40">
     <div class="container">
         @@if (header === true) {
-            @@for (var i = 0; i < cardHeader.list.length; i++) {
-                @@include('../card-image-list-header/card-image-list-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
-            }
+            
+            @@include('../card-image-list-header/card-image-list-header.html')
         }       
         
         <div class="row align-items-md-center">
             <div class="col-md-6">
-                @@for (var i = 0; i < headerWithoutEyebrow.list.length; i++) {
-                    @@include('../header-without-eyebrow/header-without-eyebrow.html',`+(JSON.stringify(headerWithoutEyebrow.list[i]))+`)
-                }
-
+                @@include('../header-without-eyebrow/header-without-eyebrow.html',{                    
+                    'title': '@@title',
+                    'desc': '@@desc',  
+                    'btn-text': '@@btn-text',                    
+                })
+                
             </div>  
             <div class="col-md-6">
-                @@for (var i = 0; i < cardListImage.image.length; i++) {
-                    @@include('../images/images.html',`+(JSON.stringify(cardListImage.image[i]))+`)
-                }
+                @@include('../images/images.html',{
+                    'imageLink':'@@imageLink'
+                })
             </div>
         </div>
     </div>

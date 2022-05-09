@@ -1,0 +1,20 @@
+<div class="newsletter-header py-5 py-md-10 py-lg-40">
+    <div class="container">
+        @@include('../card-header/card-header.html',{
+            'eyebrow': '@@eyebrow',
+            'title': '@@title',
+            'desc': '@@desc',
+            'textAlign': '@@textAlign',
+            'rowAlign':'@@rowAlign',
+        })
+        
+        <div class="row @@rowAlign">
+            <div class="col-md-6">
+                @@include('../form/form.html',{
+                    'placeholder': '@@placeholder',
+                    'btnText': '@@btnText'
+                })
+            </div>
+        </div>
+    </div>         
+</div>

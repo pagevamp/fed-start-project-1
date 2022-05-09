@@ -1,22 +1,27 @@
 <section class="card-list-with-image py-10 py-md-15 py-xl-40">
     <div class="container">
-        @@if (header === true) {
-            @@for (var i = 0; i < cardHeader.list.length; i++) {
-            @@include('../card-image-list-header/card-image-list-header.html',`+(JSON.stringify(cardHeader.list[i]))+`)
-        }
-          }
-        
+        @@if (header === true) {            
+            @@include('../card-header/card-header.html',{
+                'eyebrow': '@@eyebrow',
+                'title': '@@title',
+                'desc': '@@desc',
+                'textAlign': '@@textAlign',
+                'rowAlign':'@@rowAlign',            
+            })            
+        }       
         
         <div class="row align-items-md-center">
-            <div class="col-md-6">
-                @@for (var i=0; i < cardListImage.image.length; i++) {
-                    @@include('../images/images.html',`+(JSON.stringify(cardListImage.image[i]))+`)
-                }
+            <div class="col-md-6">              
+                @@include('../images/images.html',{
+                    'imageLink':'@@imageLink'
+                })
             </div>
             <div class="col-md-6">
-                @@for (var i=0; i < cardSubHeader.list.length; i++) {
-                    @@include('../list-image-sub-header/list-image-sub-header.html',`+(JSON.stringify(cardSubHeader.list[i]))+`)
-                }
+                
+                @@include('../list-image-sub-header/list-image-sub-header.html',{
+                    'subTitle': '@@subTitle',
+                    'subDesc': '@@subDesc',
+                })
                 <ol class="counter-list list-group list-unstyled ps-0 mb-0">
                     @@for (var i=0; i < counterList.list.length; i++) {                        
                         @@include('../counter-list/counter-list.html',`+(JSON.stringify(counterList.list[i]))+`)

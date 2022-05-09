@@ -14,16 +14,12 @@
                     </div>
                 </div>
                 
-                @@include('includes/modules/section/card-list-with-header.html', { 
-                    'cardHeader': {
-                        "list": [
-                        {
-                            'title':'Our Popular Courses',
-                            'eyebrow': 'Practice Advice',
-                            'text': 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
-                        }
-                        ]
-                    },
+                @@include('includes/modules/section/card-list-with-header.html', {
+                    'title':'Our Popular Courses',
+                    'eyebrow': 'Practice Advice',
+                    'desc': 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
+                    'textAlign': 'text-left',
+                    'rowAlign':'justify-content-start',
                     
                     'cards' : {
                         "list": [
@@ -52,73 +48,49 @@
                 
                 @@include('includes/modules/section/card-list-with-image.html', {
                     'header':true,
-                    'cardHeader': {
-                        "list": [
-                        {
-                            'title':'Our Popular Courses',
-                            'eyebrow': 'Practice Advice',
-                            'text': 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
-                        }
-                        ]
-                    },
+                    'textColor':'text-req-color',
+                    'title':'Our Popular Courses',
+                    'eyebrow': 'Practice Advice',
+                    'desc': 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
+                    'textAlign': 'text-left',
+                    'rowAlign':'justify-content-start',
+                    'imageLink':'images/image-1.png',
+                    'subTitle':'Most trusted in our field',
+                    'subDesc': 'Most calendars are designed for teams. Slate s designed for freelancers',
                     
-                    'cardSubHeader': { 
-                        "list": [
-                        { 
-                            'title':'Most trusted in our field',
-                            'text': 'Most calendars are designed for teams. Slate s designed for freelancers',
-                        }
-                        ]
-                    }, 'counterList': { 
+                    'counterList': { 
                         "list": [
                         {
                             'title':'Training Courses',
-                            'text': 'Things on a very small that you have any direct',
+                            'desc': 'Things on a very small that you have any direct',
                         },
                         {
                             'title':'Lifetime access',
-                            'text': 'Things on a verysmall that you have any direct',
+                            'desc': 'Things on a verysmall that you have any direct',
                         },
                         {
                             'title':'Training Courses', 
-                            'text': 'Things on a very small that you have any direct', 
+                            'desc': 'Things on a very small that you have any direct', 
                         }
                         ]
-                    },
-                    'cardListImage': {
-                        "image": [
-                        {
-                            'image':'image-1.png'
-                        }
-                        ]
-                    }
+                    }                    
                 })
                 
                 @@include('includes/modules/section/card-without-header.html', {
                     'header':false,
-                    'headerWithoutEyebrow': {
-                        "list": [
-                        {
-                            'title':'Video in Live Action',
-                            'text': 'Problems trying to resolve the conflict between the two major realms of Classical physics:  Newtonian mechanics ',
-                            'btn-text': 'Learn More'
-                        }
-                        ]
-                    },
+                    'textClass': 'text-left',
+                    'imageLink':'images/image-2.png',
                     
-                    'cardListImage': {
-                        "image": [
-                        {
-                            'image':'image-2.png'
-                        }
-                        ]
-                    }
+                    'title':'Video in Live Action',
+                    'desc': 'Problems trying to resolve the conflict between the two major realms of Classical physics:  Newtonian mechanics ',
+                    'btn-text': 'Learn More',
                 })
                 
                 @@include('includes/modules/section/card-article.html',{
                     'eyebrow':'Practice Advice',
                     'title':'Most Popular Courses',
-                    'text':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    'desc':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    
                     
                     'articleCardList': {
                         "list": [
@@ -130,7 +102,7 @@
                             'price':'$16.48',
                             'priceDiscount':'$6.48',
                             'btnText': 'learn more',
-                            'text': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
+                            'desc': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
                             'img': 'images/article-1.jpg',
                             'saleText': 'sale'
                         },
@@ -142,7 +114,7 @@
                             'price':'$16.48',
                             'priceDiscount':'$6.48',
                             'btnText': 'learn more',
-                            'text': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
+                            'desc': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
                             'img': 'images/article-2.jpg',
                             'saleText': 'sale'
                         },
@@ -154,7 +126,7 @@
                             'price':'$16.48',
                             'priceDiscount':'$6.48',
                             'btnText': 'learn more',
-                            'text': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
+                            'desc': ' We focus on ergonomics and meeting you where you work. It&#39;s only a keystroke away. ',
                             'img': 'images/article-3.jpg',
                             'saleText': 'sale'
                         }
@@ -165,81 +137,122 @@
                 @@include('includes/modules/section/card-article-description.html',{
                     'eyebrow':'Practice Advice',
                     'title':'Our Experts Teacher',
-                    'text':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    'desc':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    'textColor':'text-white',
+                    'colClass':'col-md-4',
                     
-                    'cardArticleDescriptionList': {
+                    'textClass': 'text-left',
+                    
+                    'listOne': {
+                        'icon': '<i class="icon-heart-fill"></i>',
+                        'articleType': 'free', 
+                        'desc': 'Organize across all apps by hand ',
+                        'price': '19$',
+                        'priceMonth': 'Per Month',
+                        'articleDescription': 'Slate helps you see how many more days you need...',
+                        'btnText': 'Try for free',
+                        'bannerText':'new',
+                        'modifierClass':'',
+                    },
+                    
+                    'listTwo': {
+                        'icon': '<i class="icon-heart-fill"></i>',
+                        'articleType': 'free', 
+                        'desc': 'Organize across all apps by hand ',
+                        'price': '19$',
+                        'priceMonth': 'Per Month',
+                        'articleDescription': 'Slate helps you see how many more days you need...',
+                        'btnText': 'Try for free',
+                        'bannerText':'new',
+                        'modifierClass':'banner-active',
+                    },
+                    
+                    'listThree': {
+                        'icon': '<i class="icon-heart-fill"></i>',
+                        'articleType': 'free', 
+                        'desc': 'Organize across all apps by hand ',
+                        'price': '19$',
+                        'priceMonth': 'Per Month',
+                        'articleDescription': 'Slate helps you see how many more days you need...',
+                        'btnText': 'Try for free',
+                        'bannerText':'new',
+                        'modifierClass':'',
+                    } 
+                })
+                
+                @@include('includes/modules/section/testinomonials.html',{
+                    'eyebrow':'Practice Advice',
+                    'title':'Get Quality Education',
+                    'desc':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    
+                    
+                    'testinomonialsList': {
                         "list": [
                         {
-                            'icon':'<i class="icon-heart-fill"></i>',
-                            'articleType': 'free', 
-                            'text': 'Organize across all apps by hand ',
-                            'price': '19$',
-                            'priceMonth': 'Per Month',
-                            'articleDescription': 'Slate helps you see how many more days you need...',
-                            'btnText': 'Try for free',
-                            
-                            'cardArticleDescriptionListPoint': {
-                                "list": [ 
-                                {
-                                    'DescriptionOne':'Unlimited product updates',
-                                    'DescriptionTwo':'Unlimited product updates',
-                                    'DescriptionThree':'Unlimited product updates',
-                                    'DescriptionFour':'1GB  Cloud storage',
-                                    'DescriptionFive':'Email and community support',                                    
-                                }                                
-                                ]
-                            }
+                            'icon-fill': '<i class="icon-star"></i>',
+                            'icon-outline': '<i class="icon-star-stroke"></i>',
+                            'desc': 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+                            'author': 'Regina Miles',
+                            'post':'Designer',
+                            'avatar':'images/avatar-1.jpg',
                         },
                         {
-                            'icon':'<i class="icon-heart-fill"></i>',
-                            'articleType': 'free', 
-                            'text': 'Organize across all apps by hand ',
-                            'price': '19$',
-                            'priceMonth': 'Per Month',
-                            'articleDescription': 'Slate helps you see how many more days you need...',
-                            'btnText': 'Try for free',
-                            
-                            'cardArticleDescriptionListPoint': {
-                                "list": [ 
-                                {
-                                    'DescriptionOne':'Unlimited product updates',
-                                    'DescriptionTwo':'Unlimited product updates',
-                                    'DescriptionThree':'Unlimited product updates',
-                                    'DescriptionFour':'1GB  Cloud storage',
-                                    'DescriptionFive':'Email and community support',                                    
-                                }                                
-                                ]
-                            }
+                            'icon-fill': '<i class="icon-star"></i>',
+                            'icon-outline': '<i class="icon-star-stroke"></i>',
+                            'desc': 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+                            'author': 'Regina Miles',
+                            'post':'Designer',
+                            'avatar':'images/avatar-1.jpg',
                         },
                         {
-                            'icon':'<i class="icon-heart-fill"></i>',
-                            'articleType': 'free', 
-                            'text': 'Organize across all apps by hand ',
-                            'price': '19$',
-                            'priceMonth': 'Per Month',
-                            'articleDescription': 'Slate helps you see how many more days you need...',
-                            'btnText': 'Try for free',
-                            
-                            'cardArticleDescriptionListPoint': {
-                                "list": [ 
-                                {
-                                    'DescriptionOne':'Unlimited product updates',
-                                    'DescriptionTwo':'Unlimited product updates',
-                                    'DescriptionThree':'Unlimited product updates',
-                                    'DescriptionFour':'1GB  Cloud storage',
-                                    'DescriptionFive':'Email and community support',                                    
-                                }                                
-                                ]
-                            }
+                            'icon-fill': '<i class="icon-star"></i>',
+                            'icon-outline': '<i class="icon-star-stroke"></i>',
+                            'desc': 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+                            'author': 'Regina Miles',
+                            'post':'Designer',
+                            'avatar':'images/avatar-1.jpg',
                         }
+                        
                         ]
                     }
                 })
                 
+                @@include('includes/modules/section/newsletter.html',{
+                    'eyebrow':'Newsletter',
+                    'title':'Most Popular Courses',
+                    'desc':'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                    'textAlign': 'text-center',
+                    'rowAlign':'justify-content-center',
+                    'placeholder':'Your Email',
+                    'btnText': 'Subscribe',
+                }) 
+                
+                
+                
                 
             </main>
         </div>
-        @@include('includes/footer.html') @@include('includes/scripts.html')
+        @@include('includes/footer.html',{
+            'colClass': 'col-md-3 col-lg-2',
+            'colClassLarge': 'col-lg-4',
+
+            'listOne': {
+                'title': 'Company Info'
+            },
+            'listTwo': {
+                'title': 'Legal'
+            },
+            'listThree': {
+                'title': 'Features'
+            },
+            'listFour': {
+                'title': 'Resources'
+            },
+            'listFive': {
+                'title': 'Get In Touch'
+            }
+        }) 
+        @@include('includes/scripts.html')
     </div>
 </body>
 </html>
