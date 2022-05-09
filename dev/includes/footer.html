@@ -1,20 +1,128 @@
-<footer class="theme-footer bg-primary text-white">
+<footer class="theme-footer pt-5 pt-md-12">
     <div class="container">
         <div class="row">
             <div class="@@colClass">
-               @@include('modules/footer-menu/footer-menu.html',{
+                @@include('modules/footer-menu/footer-menu.html',{
                     'title':'@@listOne.title',
                     'footerMenuList': {
                         "list": [
                         {
                             'menuTitle': 'About Us',
+                        },
+                        {
                             'menuTitle': 'Carrier',
-                            'menuTitle': 'We are hiring',
+                        },
+                        {
+                            'menuTitle': 'We are hiring',                            
+                        },
+                        {
                             'menuTitle': 'Blog',
                         }
                         ]
                     }
                 })
+            </div>
+            <div class="@@colClass">
+                @@include('modules/footer-menu/footer-menu.html',{
+                    'title':'@@listTwo.title',
+                    'footerMenuList': {
+                        "list": [
+                        {
+                            'menuTitle': 'About Us',
+                        },
+                        {
+                            'menuTitle': 'Carrier',
+                        },
+                        {
+                            'menuTitle': 'We are hiring',                            
+                        },
+                        {
+                            'menuTitle': 'Blog',
+                        }
+                        ]
+                    }
+                })
+            </div>
+            <div class="@@colClass">
+                @@include('modules/footer-menu/footer-menu.html',{
+                    'title':'@@listThree.title',
+                    'footerMenuList': {
+                        "list": [
+                        {
+                            'menuTitle': 'Business Marketing',
+                        },
+                        {
+                            'menuTitle': 'User Analytic',
+                        },
+                        {
+                            'menuTitle': 'Live Chat',
+                        },
+                        {
+                            'menuTitle': 'Unlimited Support',
+                        }
+                        ]
+                    }
+                })
+            </div>
+            <div class="@@colClass">
+                @@include('modules/footer-menu/footer-menu.html',{
+                    'title':'@@listFour.title',
+                    'footerMenuList': {
+                        "list": [
+                        {
+                            'menuTitle': 'IOS & Android',
+                        },
+                        {
+                            'menuTitle': 'Watch a Demo',
+                        },
+                        {
+                            'menuTitle': 'Customers',
+                        },
+                        {
+                            'menuTitle': 'API',
+                        }
+                        ]
+                    }
+                })
+            </div>
+            <div class="@@colClassLarge">
+                <h2>@@listFive.title</h2>
+                <ul class="list-unstyled text-lg-end">
+                    <li>
+                        <a href="tel:(480) 555-0103" class="text-hover-danger"><i class="icon-phone text-danger me-2"></i>(480) 555-0103</a>
+                    </li>
+                    <li>
+                        <address><i class="icon-map text-danger me-2"></i>4517 Washington Ave. Manchester, Kentucky 39495</address>
+                    </li>
+                    <li>
+                        <a href="mailto:debra.holt@example.com" class="text-hover-danger"><i class="icon-mail text-danger me-2"></i> debra.holt@example.com</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="bg-gray-300 py-6">
+        <div class="container">
+            <div class="row">
+                <div class="@@colEqual">
+                    <p>@@footerText</p>
+                </div>
+                <div class="@@colEqual">
+                    <ul class="social-icons">                       
+                        
+                        @@include('modules/social-icons/social-icons.html',{
+                            'socialIcons': {
+                                'list': [
+                                {
+                                    'facebook': '<i class="icon-facebook"></i>',
+                                    'instagram': '<i class="icon-instagram"></i>',
+                                    'twitter': '<i class="icon-twitter"></i>',
+                                }
+                                ]
+                            }
+                        })   
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
