@@ -1,7 +1,6 @@
 .leadspace {    
     
     @include media-breakpoint-up(md) { 
-        font-size: 2rem;
         min-height: 50rem;
     }
     
