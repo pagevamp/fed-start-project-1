@@ -431,12 +431,14 @@ $spacers: (
 24: ($spacer * 2.4),
 25: ($spacer * 2.5),
 26: ($spacer * 2.6),
+28: ($spacer * 2.8),
 29: ($spacer * 2.9),
 30: ($spacer * 3),
 31: ($spacer * 3.1),
 35: ($spacer * 3.5),
 40: ($spacer * 4),
 48: ($spacer * 4.8),
+53: ($spacer * 5.3),
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -545,7 +547,7 @@ sm: 540px,
 md: 720px,
 lg: 960px,
 xl: 1000px,
-xxl: 1084px
+xxl: 1076px
 ) !default;
 // scss-docs-end container-max-widths
 

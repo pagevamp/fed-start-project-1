@@ -1,0 +1,50 @@
+.leadspace {    
+    
+    @include media-breakpoint-up(md) { 
+        min-height: 50rem;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        min-height: 73rem;        
+    }
+    
+    .container {
+        z-index: 2;
+    }
+    
+    figure {
+        display: none;       
+        
+        @include media-breakpoint-up(md) {
+            display: block;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -2;            
+        }
+    }
+    
+    &__eyebrow {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.01rem;
+    }
+    
+    &__text {
+        max-width: 37rem;
+    }
+}
+.bg-overlay {
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%);
+        z-index: -1;
+    }
+}
