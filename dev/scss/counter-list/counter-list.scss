@@ -21,5 +21,9 @@
             line-height: 1.5;
             letter-spacing: 0.01rem;
         }
-    }    
+    }
+    
+    &__body {
+        max-width: 23rem;
+    }
 }
