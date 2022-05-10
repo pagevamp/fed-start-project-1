@@ -10,16 +10,26 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            height: 5rem;
-            width: 5rem;
+            height: 4rem;
+            width: 4rem;
             border-radius: 50%;
             background-color: $gray-600;
             padding: .5rem;
             color: $red;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             font-weight: 700;
             line-height: 1.5;
             letter-spacing: 0.01rem;
+            
+            @include media-breakpoint-up(md) {
+                width: 5rem;
+            }
+            
+            @include media-breakpoint-up(lg) {
+                font-size: 1.6rem;
+                height: 5rem;
+                width: 5rem;
+            }
         }
     }
     
