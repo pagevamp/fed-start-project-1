@@ -356,3 +356,15 @@ ul {
         color: $sohail !important;
     }
 }
+
+.font {
+    &-14 {
+        font-size: 1.4rem;
+    }
+    
+    &-20 {
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        } 
+    }
+}

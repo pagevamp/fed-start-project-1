@@ -4,8 +4,7 @@
         min-height: 50rem;
     }
     
-    @include media-breakpoint-up(lg) {
-        font-size: 2rem;
+    @include media-breakpoint-up(lg) {        
         min-height: 73rem;        
     }
     

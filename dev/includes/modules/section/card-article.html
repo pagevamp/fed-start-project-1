@@ -8,8 +8,10 @@
         })
         
         <div class="row">
-            @@for (var i = 0; i < articleCardList.list.length; i++) {                
-                @@include('../article-card-list/article-card-list.html',`+(JSON.stringify(articleCardList.list[i]))+`)
+            @@for (var i = 0; i < articleCardList.list.length; i++) {  
+                <div class="col-md-4">
+                    @@include('../article-card-list/article-card-list.html',`+(JSON.stringify(articleCardList.list[i]))+`)
+                </div>              
             }
         </div>
     </div>    
