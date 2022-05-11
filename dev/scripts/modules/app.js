@@ -1,12 +1,17 @@
 import 'popper.js';
 // import 'bootstrap/js/dist/button';
-import 'bootstrap/js/dist/modal';
-// import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/modal';
+// import {bootstrap} from 'bootstrap/js/dist/dropdown';
+// // import 'bootstrap/js/dist/modal';
 // import 'bootstrap/js/dist/tab';
+// import 'bootstrap/js/dist/offcanvas';
 // import 'bootstrap/js/dist/collapse';
-// import 'bootstrap-select';
-// import 'bootstrap/js/dist/modal';
+// import 'bootstrap/js/dist/dropdown';
+// // import { Collapse} from 'bootstrap';
+// // import 'bootstrap-select';
+// // import 'bootstrap/js/dist/modal';
+// import CustomCollapse from './collapse';
+import Collapse from 'bootstrap/js/dist/collapse'
 
 
 class global {
@@ -16,15 +21,20 @@ class global {
         this.megamenuPopup();
         this.toggleContent();
         this.readMore();
+        
     }
-
+    
     stickyHeader() {
+        var myCollapse = document.getElementById('navbarNav')
+        var bsCollapse = new Collapse(myCollapse, {
+          toggle: false
+        })
         var elemBody = $('body');
         var pageHeader = $('.theme-header');
         if ($(elemBody).hasClass('home')) {
             $(pageHeader).addClass('theme-header--dark');
         }
-
+        
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('.theme-header').addClass('sticky');
@@ -33,7 +43,7 @@ class global {
             }
         });
     }
-
+    
     megamenuPopup() {
         var toggleBar = $('.navbar-toggle');
         var popupMenu = $('.megamenu-popup');
@@ -45,7 +55,7 @@ class global {
             $(popupMenu).removeClass('active');
         });
     }
-
+    
     toggleContent() {
         var toggleContent = $('.toggle-text');
         var viewBtn = $('.toggleRead');
@@ -54,14 +64,14 @@ class global {
             $(toggleContent).toggleClass('active');
         });
     }
-
+    
     readMore() {
         $('.readmore').click(function () {
             $('.collapse-text').addClass('expand');
             $(this).hide();
         });
     }
-
+    
 }
 
 export default global;
