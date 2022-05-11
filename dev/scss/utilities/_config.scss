@@ -9,6 +9,8 @@ body {
     position: relative;    
     -webkit-overflow-scrolling: touch;
     letter-spacing: 0.02rem;
+    position: relative;
+    overflow-x: hidden;
     // Makes the smooth scrolling on ios devices
 }
 
@@ -18,7 +20,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.43;
     color: $gray-700;
-
+    
     &.prevent-scrolling {
         @extend .overflow-hidden, .position-fixed, .w-100;
         top: auto;
@@ -28,7 +30,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-
+    
     &:hover,
     &:focus {
         text-decoration: none;
@@ -45,7 +47,7 @@ button,
 
 p {
     margin-bottom: 3.2rem;
-
+    
     &:last-child {
         @extend .mb-0;
     }
@@ -54,15 +56,15 @@ p {
 ul,
 ol {
     padding-left: 2rem;
-
+    
     > li {
         padding-left: .4rem;
         margin-bottom: 1rem;
-
+        
         &:last-child {
             margin-bottom: 0;
         }
-
+        
         &::marker {
             color: $primary;
         }
@@ -82,7 +84,7 @@ button,
 .btn,
 .btn-link {
     text-decoration: none;
-
+    
     &:hover {
         text-decoration: none;
         outline: none;
